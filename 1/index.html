@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //    height
+        const johnsHight = 1.69;
+        const marksHight = 1.95;
+
+        //    weights
+        const johnswWight = 92;
+        const markswWight = 78;
+
+        //    calulating BMI
+        //    BMI = mass / height ** 2 = mass; //it is formula
+        function calBMI(mass, height) {
+            let BMI = mass / height ** 2;
+            return BMI;
+        }
+
+        johnBMI = calBMI(johnswWight, johnsHight);
+        marksBMI = calBMI(markswWight, marksHight);
+        console.log(marksBMI, johnBMI);
+        // markHigherBMI : it is checking that "is mark have higher BMI than john"
+        const markHigherBMI = marksBMI > johnBMI;
+        console.log(markHigherBMI);
+    </script>
+</body>
+
+</html>
